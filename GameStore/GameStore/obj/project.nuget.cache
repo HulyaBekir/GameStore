@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VbmJyr+tdkKELfpFaBHSLH0chtcPkpzKrhRR33wo+M2uO3uDS0ZCXkJWXngkG5jIdrDRAln2IOP9hwEq5BcRAw==",
+  "dgSpecHash": "dcEQBq7rGjh6QUarll87thZI4F89eQRgSmh5X6u90aX0TJSu6wvq8hNR+zIh2NdFpZp4iJGv6WH4PU6tF0ruzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ACER\\Desktop\\ProjectAssigmentC#\\AssigmentProjectGameStore\\GameStore\\GameStore\\GameStore.csproj",
+  "projectFilePath": "C:\\Users\\ACER\\Desktop\\GameStore\\GameStore\\GameStore\\GameStore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",

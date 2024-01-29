@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YaA0FjOIy7nplINW8+M4rsp+3K4riEmLu0TN4dNVRj32rcSsfOiVrSMKnRrK5651AxF7XBVhoIK/v6zyq8zkWQ==",
+  "dgSpecHash": "4LUoc2OK5sfSVMn4ibqaDcqhRRGo746U2/0yd3pTpwmECot2FTfZSGFLEVu56WSRM0Mp/bpG70usW8iy765S9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ACER\\Desktop\\ProjectAssigmentC#\\AssigmentProjectGameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj",
+  "projectFilePath": "C:\\Users\\ACER\\Desktop\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

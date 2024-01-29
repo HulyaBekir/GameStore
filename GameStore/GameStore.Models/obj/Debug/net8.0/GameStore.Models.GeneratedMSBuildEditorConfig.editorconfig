@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GameStore.Models
-build_property.ProjectDir = C:\Users\ACER\Desktop\ProjectAssigmentC#\AssigmentProjectGameStore\GameStore\GameStore.Models\
+build_property.ProjectDir = C:\Users\ACER\Desktop\GameStore\GameStore\GameStore.Models\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
