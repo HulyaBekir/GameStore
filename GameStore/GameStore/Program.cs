@@ -1,4 +1,9 @@
 
+using GameStore.BL.Interfaces;
+using GameStore.BL.Services;
+using GameStore.DL.Interfaces;
+using GameStore.DL.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

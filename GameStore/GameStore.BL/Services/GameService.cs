@@ -1,4 +1,6 @@
 ﻿using GameStore.BL.Interfaces;
+using GameStore.DL.Interfaces;
+using GameStore.Models.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +32,10 @@ namespace GameStore.BL.Services
         {
             return _gameRepository.GetById(id);
         }
-
+        public void Update(Game game)
+        {
+            _gameRepository.Update(game);
+        }
         public void Remove(int id)
         {
             _gameRepository.Remove(id);
@@ -38,14 +43,16 @@ namespace GameStore.BL.Services
 
         public List<Game> GetAllGamesByGenreId(int genreId)
         {
-            return _gameRepository.GetAllBooksByAuthorId(genreId);
+            return _gameRepository.GetAllGamesByGenreId(genreId);
         }
 
         public int TestCalculation(int number)
         {
-            var books = _gameRepository.GetAll();
-            return books.Count() + number;
+            var games = _gameRepository.GetAll();
+            return games.Count() + number;
 
         }
+
+        
     }
 }

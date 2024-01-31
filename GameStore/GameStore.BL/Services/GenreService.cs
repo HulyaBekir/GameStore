@@ -1,4 +1,6 @@
 ﻿using GameStore.BL.Interfaces;
+using GameStore.DL.Interfaces;
+using GameStore.Models.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +23,8 @@ namespace GameStore.BL.Services
             _genreRepository.Add(genre);
         }
 
+        
+
         public List<Genre> GetAll()
         {
             return _genreRepository.GetAll();
@@ -36,5 +40,6 @@ namespace GameStore.BL.Services
             _genreRepository.Remove(id);
         }
 
+       
     }
 }

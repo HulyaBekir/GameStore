@@ -1,4 +1,6 @@
 ﻿using GameStore.BL.Interfaces;
+using GameStore.Models.Models.Request;
+using GameStore.Models.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +20,7 @@ namespace GameStore.BL.Services
             _gameService = gameService;
         }
 
-        public GetGamesByGenreResponse? GetgamesByGenre(GetGamesByGenreRequest request)
+        public GetGamesByGenreResponse? GetGamesByGenre(GetGamesByGenreRequest request)
         {
             var games = _gameService.GetAllGamesByGenreId(request.GenreId);
 
@@ -35,10 +37,9 @@ namespace GameStore.BL.Services
             return null;
         }
 
-        public GetGamesByGenreResponse? GetGamesByGenre(GetGamesByGenreRequest request)
-        {
-            throw new NotImplementedException();
-        }
+        
+
+        
     };
 }
 

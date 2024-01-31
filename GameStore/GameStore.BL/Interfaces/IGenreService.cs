@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStore.Models.Models.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace GameStore.BL.Interfaces
 
         Genre GetById(int id);
 
-        void Add(Genre author);
+        void Add(Genre genre);
 
         void Remove(int id);
     }

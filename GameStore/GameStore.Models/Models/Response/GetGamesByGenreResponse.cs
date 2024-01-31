@@ -9,7 +9,7 @@ namespace GameStore.Models.Models.Response
 {
     public class GetGamesByGenreResponse
     {
-        public Genre? Author { get; set; }
+        public Genre? Genre { get; set; }
 
         public List<Game>? Games { get; set; }
     }

@@ -1,5 +1,6 @@
 ﻿using GameStore.DL.Interfaces;
 using GameStore.DL.MemoryDb;
+using GameStore.Models.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,13 @@ namespace GameStore.DL.Repositories
         {
             InMemoryDb.GameData.Add(game);
         }
+        public void Update(Game game)
+        {
+            InMemoryDb.GameData.Sort((IComparer<Game>?)game);
+        }
         public void Remove(int id)
         {
-            var book = GetById(id);
+            var game = GetById(id);
             InMemoryDb.GameData.Remove(game);
         }
 
@@ -34,9 +39,6 @@ namespace GameStore.DL.Repositories
             return result;
         }
 
-        public List<Game> GetAllGamesByGenreId(int genreId)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

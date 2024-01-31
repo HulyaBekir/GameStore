@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GameStore.DL\GameStore.DL.csproj" />
     <ProjectReference Include="..\GameStore.Models\GameStore.Models.csproj" />
   </ItemGroup>
 

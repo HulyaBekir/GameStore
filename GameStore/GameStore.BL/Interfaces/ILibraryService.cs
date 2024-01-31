@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GameStore.Models.Models.Request;
+using GameStore.Models.Models.Response;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +11,6 @@ namespace GameStore.BL.Interfaces
     public interface ILibraryService
     {
         GetGamesByGenreResponse? GetGamesByGenre(GetGamesByGenreRequest request);
+        
     }
 }

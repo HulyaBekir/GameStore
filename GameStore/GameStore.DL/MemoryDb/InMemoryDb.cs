@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStore.Models.Models.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,20 +14,20 @@ namespace GameStore.DL.MemoryDb
         new Genre()
         {
             Id = 1,
-            Type = "Name 1",
-            StartDate = DateTime.Now,
+            Name = "Name 1",
+            
         },
         new Genre()
         {
             Id= 2,
-            Type = "Name 2",
-            StartDate = DateTime.Now,
+            Name = "Name 2",
+            
         },
         new Genre()
         {
             Id = 3,
-            Type = "Name 3",
-            StartDate = DateTime.Now,
+            Name = "Name 3",
+           
         }
         };
 
@@ -37,21 +38,21 @@ namespace GameStore.DL.MemoryDb
             Id = 1,
             Title = "Name 1",
             GenreId = 1,
-            RelaseDate = new DateTime(2012, 03, 13)
+            RelaseDate = new DateTime(2011, 11, 10)
         },
         new Game()
         {
             Id= 2,
             Title = "Name 2",
             GenreId = 2,
-            RelaseDate = new DateTime(2019, 04, 18)
+            RelaseDate = new DateTime(2012, 06, 11)
         },
         new Game()
         {
             Id = 3,
             Title = "Name 3",
             GenreId = 3,
-            RelaseDate = new DateTime(2014, 05, 14)
+            RelaseDate = new DateTime(2014, 25, 10)
         },
         new Game()
         {

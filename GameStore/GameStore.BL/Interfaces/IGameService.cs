@@ -13,7 +13,9 @@ namespace GameStore.BL.Interfaces
 
         Game GetById(int id);
 
-        void Add(Game book);
+        void Add(Game game);
+
+        void Update(Game game);
 
         void Remove(int id);
         List<Game> GetAllGamesByGenreId(int genreId);

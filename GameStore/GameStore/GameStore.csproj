@@ -12,4 +12,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameStore.BL\GameStore.BL.csproj" />
+    <ProjectReference Include="..\GameStore.DL\GameStore.DL.csproj" />
+    <ProjectReference Include="..\GameStore.Models\GameStore.Models.csproj" />
+  </ItemGroup>
+
 </Project>

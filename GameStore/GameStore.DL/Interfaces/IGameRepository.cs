@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStore.Models.Models.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace GameStore.DL.Interfaces
         Game GetById(int id);
 
         void Add(Game game);
+
+        void Update(Game game); 
 
         void Remove(int id);
         List<Game> GetAllGamesByGenreId(int genreId);
