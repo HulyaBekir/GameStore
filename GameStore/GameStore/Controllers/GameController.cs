@@ -38,6 +38,15 @@ namespace GameStore.Controllers
             _gameService.Add(game);
         }
 
+        [HttpPut("Update")]
+
+        public void Update([FromBody] Game game) 
+        {
+            if (game == null) return;
+            
+                _gameService.NotFound(game);
+        }
+
         [HttpDelete]
 
         public void Delete(int id)

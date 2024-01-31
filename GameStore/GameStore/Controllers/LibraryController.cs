@@ -1,6 +1,7 @@
 ﻿using GameStore.BL.Interfaces;
 using GameStore.Models.Models.Request;
 using GameStore.Models.Models.Response;
+using GameStore.Validators;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +11,11 @@ namespace GameStore.Controllers
     [ApiController]
     public class LibraryController : ControllerBase
     {
-        private readonly ILibraryService libraryService;
+        private readonly ILibraryService _libraryService;
 
         public LibraryController(ILibraryService libraryService)
         {
-            this.libraryService = libraryService;
+            this._libraryService = libraryService;
         }
 
         [HttpGet]
@@ -28,6 +29,18 @@ namespace GameStore.Controllers
 
         [HttpGet]
 
-        
+        public string GetTestEndpoint([FromBody] GetGamesByGenreRequest request)
+        {
+            var validator = new GetGamesByGenreRequestValidator();
+
+            var result = validator.Validate(request);
+
+            if (request.IsValid)
+            {
+                return "Test Pass";
+            }
+
+            return "Test Not Pass";
+        }
     }
 }

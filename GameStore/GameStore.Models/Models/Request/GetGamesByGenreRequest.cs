@@ -11,5 +11,6 @@ namespace GameStore.Models.Models.Request
         public int GenreId { get; set; }
 
         public DateTime AfterDate { get; set; }
+        public bool IsValid { get; set; }
     }
 }

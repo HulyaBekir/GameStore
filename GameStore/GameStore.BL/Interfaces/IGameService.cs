@@ -19,5 +19,6 @@ namespace GameStore.BL.Interfaces
 
         void Remove(int id);
         List<Game> GetAllGamesByGenreId(int genreId);
+        void NotFound(Game? game);
     }
 }
