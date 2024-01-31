@@ -1,5 +1,6 @@
 ﻿using GameStore.BL.Interfaces;
 using GameStore.DL.Interfaces;
+using GameStore.DL.Repositories;
 using GameStore.Models.Models.User;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,10 @@ namespace GameStore.BL.Services
             return _genreRepository.GetById(id);
         }
 
+        public void Update(Genre genre)
+        {
+            _genreRepository.Update(genre);
+        }
         public void Remove(int id)
         {
             _genreRepository.Remove(id);

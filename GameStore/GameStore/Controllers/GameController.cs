@@ -43,8 +43,8 @@ namespace GameStore.Controllers
         public void Update([FromBody] Game game) 
         {
             if (game == null) return;
-            
-                _gameService.NotFound(game);
+
+            _gameService.Update(game);
         }
 
         [HttpDelete]

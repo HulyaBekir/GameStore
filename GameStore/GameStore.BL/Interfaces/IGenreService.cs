@@ -15,6 +15,10 @@ namespace GameStore.BL.Interfaces
 
         void Add(Genre genre);
 
+        void Update(Genre genre);
+
+        
+
         void Remove(int id);
     }
 }

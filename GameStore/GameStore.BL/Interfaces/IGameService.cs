@@ -15,10 +15,10 @@ namespace GameStore.BL.Interfaces
 
         void Add(Game game);
 
-        void Update(Game game);
+        void Update(Game updatedGame);
 
         void Remove(int id);
+
         List<Game> GetAllGamesByGenreId(int genreId);
-        void NotFound(Game? game);
     }
 }

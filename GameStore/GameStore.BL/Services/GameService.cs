@@ -53,9 +53,6 @@ namespace GameStore.BL.Services
 
         }
 
-        public void NotFound(Game? game)
-        {
-           
-        }
+       
     }
 }

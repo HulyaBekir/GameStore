@@ -18,6 +18,7 @@ namespace GameStore.DL.Interfaces
         void Update(Game game); 
 
         void Remove(int id);
+
         List<Game> GetAllGamesByGenreId(int genreId);
     }
 }

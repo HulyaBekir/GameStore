@@ -16,5 +16,7 @@ namespace GameStore.DL.Interfaces
         void Add(Genre genre);
 
         void Remove(int id);
+
+        void Update(Genre genre);
     }
 }

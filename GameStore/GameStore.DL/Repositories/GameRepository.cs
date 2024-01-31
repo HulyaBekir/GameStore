@@ -25,7 +25,9 @@ namespace GameStore.DL.Repositories
         }
         public void Update(Game game)
         {
-            InMemoryDb.GameData.Sort((IComparer<Game>?)game);
+            InMemoryDb.GameData.FirstOrDefault(Game => Game.Id == game.Id);
+            
+            
         }
         public void Remove(int id)
         {
@@ -33,12 +35,11 @@ namespace GameStore.DL.Repositories
             InMemoryDb.GameData.Remove(game);
         }
 
-        public List<Game> GetAllGamesByGenresId(int id)
+
+        public List<Game> GetAllGamesByGenreId(int genreId)
         {
-            var result = InMemoryDb.GameData.Where(b => b.GenreId == id).ToList();
+            var result = InMemoryDb.GameData.Where(b => b.GenreId == genreId).ToList();
             return result;
         }
-
-        
     }
 }

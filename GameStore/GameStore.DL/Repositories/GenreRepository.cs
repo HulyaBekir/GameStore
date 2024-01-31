@@ -23,12 +23,17 @@ namespace GameStore.DL.Repositories
         {
             InMemoryDb.GenreData.Add(genre);
         }
+
+        
         public void Remove(int id)
         {
             var genre = GetById(id);
             InMemoryDb.GenreData.Remove(genre);
         }
 
-      
+        public void Update(Genre genre)
+        {
+            InMemoryDb.GameData.FirstOrDefault(Genre => Genre.Id == genre.Id);
+        }
     }
 }

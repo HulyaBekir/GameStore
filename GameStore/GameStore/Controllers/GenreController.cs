@@ -37,6 +37,13 @@ namespace GameStore.Controllers
             _genreService.Add(genre);
         }
 
+        [HttpPut("Update")]
+
+        public void Update([FromBody] Genre genre)
+        {
+            _genreService.Update(genre);
+        }
+
         [HttpDelete]
 
         public void Delete(int id)
