@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class LibraryController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace GameStore.Controllers
             this._libraryService = libraryService;
         }
 
-        [HttpGet]
+        [HttpGet("GetGamesByGenreResponse")]
 
         public GetGamesByGenreResponse? GetGamesByGenre(GetGamesByGenreRequest request)
         {
