@@ -1,4 +1,6 @@
 
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using GameStore.BL.Interfaces;
 using GameStore.BL.Services;
 using GameStore.DL.Interfaces;

@@ -40,11 +40,15 @@ namespace GameStore.Controllers
 
         [HttpPut("Update")]
 
-        public void Update([FromBody] Game game) 
+        public void Update([FromBody] Game game) //OkObjectResult
         {
             if (game == null) return;
 
             _gameService.Update(game);
+
+            //return Ok("Resource updated successfully");
+
+
         }
 
         [HttpDelete]

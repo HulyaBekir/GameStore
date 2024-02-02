@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[11.9.0, )"
             },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
@@ -140,6 +144,10 @@
               "target": "Package",
               "version": "[11.9.0, )"
             },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
@@ -216,6 +224,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

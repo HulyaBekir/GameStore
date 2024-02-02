@@ -39,9 +39,10 @@ namespace GameStore.Controllers
 
         [HttpPut("Update")]
 
-        public void Update([FromBody] Genre genre)
+        public void Update([FromBody] Genre genre) //OkObjectResult
         {
             _genreService.Update(genre);
+            //return Ok("Resource updated successfully");
         }
 
         [HttpDelete]
